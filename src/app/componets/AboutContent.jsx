@@ -3,17 +3,21 @@ import { Text, Box } from "@chakra-ui/react";
 const AboutContent = () => {
   return (
     <Box
-      p={{ xl: "4" }}
+      pr="10"
       color="#F5D7DB"
       width={{ base: "80%", xl: "50%" }}
-      mt="20"
       mr="auto"
       ml="auto"
-      fontSize={{ base: "20", md: "26", lg: "20" }}
+      fontSize={{ base: "18", md: "26", lg: "20" }}
       textAlign="left"
       borderRight={{ xl: "2px solid #F5D7DB" }}
     >
-      <Text as="h2" fontSize="36" fontWeight="bold" color="#F1916D">
+      <Text
+        as="h2"
+        fontSize={{ base: "32.4", md: "54" }}
+        fontWeight="bold"
+        color="#F1916D"
+      >
         About Jason...
       </Text>
       <Text mt="10">

@@ -43,7 +43,7 @@ const HeroBanner = () => {
             Technology + Art + Development + Design
           </Text>
         </Box>
-        <Image src="/images/juc-avatar.webp" alt="" height="460" />
+        <Image src="/images/juc-avatar.webp" alt="" height="520" />
       </Box>
     </Box>
   );
