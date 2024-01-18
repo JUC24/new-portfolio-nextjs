@@ -1,5 +1,5 @@
 "use client";
-const {
+import {
   Box,
   List,
   ListItem,
@@ -7,7 +7,7 @@ const {
   Link,
   Flex,
   Text,
-} = require("@chakra-ui/react");
+} from "@chakra-ui/react";
 import { GiWorld } from "react-icons/gi";
 import { FaLinkedin } from "react-icons/fa";
 import { TfiGithub } from "react-icons/tfi";
