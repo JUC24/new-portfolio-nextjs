@@ -2,33 +2,45 @@ import { Box, Text, Flex } from "@chakra-ui/react";
 
 import React from "react";
 
-const Timeline = ({ data }) => {
+const ExpirienceTimeline = ({ data }) => {
   return (
     <Flex direction="column">
-      {data.map((event, index) => (
-        <Box key={index} position="relative" mb="8">
+      {data.map((job, index) => (
+        <Box key={index} position="relative" mb="10">
           <Box
             width="4"
             height="4"
             bg="#BD83B8"
             borderRadius="50%"
             position="absolute"
-            left={{ base: "-1.5", lg: "-1.5" }}
+            left="-2"
             transform="translateY(-50%)"
           />
           <Box
-            w={{ base: "90%" }}
-            border="1px solid #F5D7DB"
-            p="4"
+            w="90%"
+            borderTop="1px solid #F5D7DB"
+            borderBottom="1px solid #F5D7DB"
+            pl={{ base: "2", md: "5", lg: "8" }}
+            pr="2"
+            pt="8"
+            pb="8"
             borderRadius="md"
             ml="4"
             color="#F5D7DB"
           >
-            <Text mb="2">{event.date}</Text>
-            <Text mb="2" fontWeight="bold">
-              {event.title}
+            <Text mb="4" fontSize={{ base: "18", md: "26", lg: "20" }}>
+              {job.date}
             </Text>
-            <Text mb="2">{event.description}</Text>
+            <Text
+              mb="4"
+              fontWeight="bold"
+              fontSize={{ base: "22", md: "30", lg: "26" }}
+            >
+              {job.title}
+            </Text>
+            <Text mb="4" fontSize={{ base: "18", md: "24", lg: "18" }}>
+              {job.description}
+            </Text>
           </Box>
         </Box>
       ))}
@@ -36,4 +48,4 @@ const Timeline = ({ data }) => {
   );
 };
 
-export default Timeline;
+export default ExpirienceTimeline;
